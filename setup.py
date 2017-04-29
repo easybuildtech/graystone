@@ -8,4 +8,7 @@ setup(name='graystone',
       author_email='ben@easybuildtech.com',
       license='MIT',
       packages=['graystone'],
+      install_requires=[
+          'numpy',
+      ],
       zip_safe=False)
