@@ -1,7 +1,7 @@
 import numpy as np
 import math
 import robotics_toolbox.transform as t
-import config_rr
+import rr_config
 
 a1 = config_rr.a1
 a2 = config_rr.a2
