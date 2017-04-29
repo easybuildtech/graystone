@@ -7,7 +7,7 @@ setup(name='graystone',
       author='Easy Build Tech',
       author_email='ben@easybuildtech.com',
       license='MIT',
-      packages=['graystone'],
+      packages=['graystone'], ['graystone.robotics_toolbox'], ['graystone.arbotix'],
       install_requires=[
           'numpy',
       ],
