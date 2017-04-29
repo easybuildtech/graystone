@@ -25,7 +25,7 @@ def rrTraj(points):
         try:
             T0
         except NameError: 
-            T0 = transl(i[0], i[1], 0) * inv(transl(base[0], base[1], 0))
+            T0 = compound(transl(i[0], i[1], 0), inv(transl(base[0], base[1], 0)))
         else:
             T0 = T1
 
