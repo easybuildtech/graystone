@@ -9,6 +9,6 @@ setup(name='graystone',
       license='MIT',
       packages=['graystone', 'graystone.robotics_toolbox', 'graystone.arbotix'],
       install_requires=[
-          'numpy',
+          'numpy', 'matplotlib',
       ],
       zip_safe=False)
