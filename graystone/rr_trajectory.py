@@ -18,20 +18,14 @@ def rrTraj(points):
     
     #get total number of points provided
     numberOfPoints = len(points) - 4
-  
-    for i in points:
+
+    for i in range(0,len(points)-1):
         #transform {W} points to robot coordinate frame
         
-        try:
-            T0
-        except NameError: 
-            T0 = transl(i[0], i[1], 0) * inv(transl(base[0], base[1], 0))
-        else:
-            T0 = T1
+        T0 = transl(points[i][0], points[i][1], 0) * inv(transl(base[0], base[1], 0))
 
-        next
-        T1 = transl(i[0], i[1], 0) * inv(transl(base[0], base[1], 0))
-    
+        T1 = transl(points[i+1][0], points[i+1][1], 0) * inv(transl(base[0], base[1], 0))
+        #print T0, T1
         cartesianTrajectory =  ctraj(T0, T1, timestep)
 
         for i in range(timestep):
